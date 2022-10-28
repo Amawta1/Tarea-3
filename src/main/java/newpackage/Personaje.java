@@ -57,9 +57,9 @@ public class Personaje {
     }
 
     public String mostrarInfo() {
-        return "El personaje del " + this.getNombrePersonaje()
-                + " participa en la pelicula de nombre " + this.getFilm().getPelicula()
-                + " y es el actor que le da vida al personaje " + this.getInterprete().getNombre();
+        return "El actor " + this.getNombrePersonaje()
+                + " participa en la pelicula: " + this.getFilm().getPelicula()
+                + ", y es el actor que le da vida al personaje " + this.getInterprete().getNombre();
     }
 
     

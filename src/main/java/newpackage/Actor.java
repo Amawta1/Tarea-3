@@ -45,7 +45,7 @@ public class Actor {
     }
 
     public String mostrarInfo() {
-        return "quien nació en "
+        return "Quien nació en "
                 + this.getLugarNacimiento() + " en la fecha de " + this.getFechaNacimiento();
     }
     

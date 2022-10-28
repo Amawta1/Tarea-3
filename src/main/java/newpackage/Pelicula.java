@@ -11,16 +11,12 @@ package newpackage;
 public class Pelicula {
     private String pelicula;
     private int yearLanzamiento;
-    private String idioma;
-    private String clasificacion;
     private double duracion;
 
-    public Pelicula(String p, int yL, String i, String c, double d) {
-        this.pelicula = p;
-        this.yearLanzamiento = yL;
-        this.idioma = i;
-        this.clasificacion = c;
-        this.duracion = d;
+    public Pelicula(String a, int b,double c) {
+        this.pelicula = a;
+        this.yearLanzamiento = b;
+        this.duracion = c;
 
     }
 
@@ -40,21 +36,6 @@ public class Pelicula {
         this.yearLanzamiento = yearLanzamiento;
     }
 
-    public String getIdioma() {
-        return idioma;
-    }
-
-    public void setIdioma(String idioma) {
-        this.idioma = idioma;
-    }
-
-    public String getClasificacion() {
-        return clasificacion;
-    }
-
-    public void setClasificacion(String clasificacion) {
-        this.clasificacion = clasificacion;
-    }
 
     public double getDuracion() {
         return duracion;
@@ -66,9 +47,7 @@ public class Pelicula {
 
     public String mostrarInfo() {
         return "Esta pelicula se estreno en el año " + this.getYearLanzamiento()
-                + ", el idioma en la que viene es " + this.getIdioma()
-                + ", su clasificacion es: " + this.getClasificacion()
-                + " y su duracion es " + this.duracion + " horas.";
+                + " y su duracion es de " + this.duracion + " horas";
 
     }
     

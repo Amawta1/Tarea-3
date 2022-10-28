@@ -22,12 +22,9 @@ public class Principal1 {
         var padrino1 = new Actor(1940, "Nueva York",
                 "Alfredo James Pacino");
 
-        var lobo = new Pelicula("Lobo de Wall Street", 2013, "Ingles",
-                "C", 3);
-        var infierno = new Pelicula("El infierno", 2010, "Español",
-                "C", 2.50);
-        var padrino = new Pelicula("El padrino", 1972, "Italiano",
-                "C", 3.5);
+        var lobo = new Pelicula("Lobo de Wall Street", 2013, 3.0);
+        var infierno = new Pelicula("El infierno", 2010, 2.50);
+        var padrino = new Pelicula("El padrino", 1972, 3.5);
 
         var jordan = new Personaje("Jordan Belfort", "Protagonista",
                 leonardo, lobo);
