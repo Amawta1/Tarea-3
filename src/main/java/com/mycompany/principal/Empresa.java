@@ -10,45 +10,39 @@ package com.mycompany.principal;
  */
 public class Empresa {
     
-    private String nombre; 
-    private String ubicacion;
-    private String tipoEmpresa;
-    private Departamento departamento;
+    private String nombre;
+    private String duenioEmpresa;
+    private String anioCreacion;
 
-    public Empresa(String nombre, String ubicacion, String tipoEmpresa, Departamento departamento) {
+
+    public void setNombre(String nombre) {
         this.nombre = nombre;
-        this.ubicacion = ubicacion;
-        this.tipoEmpresa = tipoEmpresa;
-        this.departamento = departamento;
     }
 
     public String getNombre() {
         return nombre;
     }
 
-    public void setNombre(String nombre) {
+    public void setDuenioEmpresa(String duenioEmpresa) {
+        this.duenioEmpresa = duenioEmpresa;
+    }
+
+    public void setAnioCreacion(String anioCreacion) {
+        this.anioCreacion = anioCreacion;
+    }
+
+    public String getDuenioEmpresa() {
+        return duenioEmpresa;
+    }
+
+    public String getAnioCreacion() {
+        return anioCreacion;
+    }
+
+    public Empresa(String nombre, String duenioEmpresa, String anioCreacion) {
         this.nombre = nombre;
+        this.duenioEmpresa = duenioEmpresa;
+        this.anioCreacion = anioCreacion;
     }
 
-    public String getUbicacion() {
-        return ubicacion;
-    }
-
-    public void setUbicacion(String ubicacion) {
-        this.ubicacion = ubicacion;
-    }
-
-    public String getTipoEmpresa() {
-        return tipoEmpresa;
-    }
-
-    public void setTipoEmpresa(String tipoEmpresa) {
-        this.tipoEmpresa = tipoEmpresa;
-    }
-
-    public String mostrarInfo(){
-        return"\nTrabaja en la empresa " + this.nombre +" que esta ubicada en "
-                + this.ubicacion +" y es una empresa de "+ this.tipoEmpresa;
-    }
-    
 }

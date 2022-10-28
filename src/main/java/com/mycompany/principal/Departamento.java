@@ -9,46 +9,40 @@ package com.mycompany.principal;
  * @author amawt
  */
 public class Departamento {
-   
-    private String codigo;
-    private String nombre;
-    private int numeroTrabajadores;
+    
+    private String nombreDepartamento;
+    private int codigoDepartamento;
+    Empresa empresa;
 
-
-    public Departamento(String codigo,String nombre, int numeroTrabajadores) {
-        this.codigo = codigo;
-        this.nombre=nombre;
-        this.numeroTrabajadores = numeroTrabajadores;
+    public void setNombreDepartamento(String nombreDepartamento) {
+        this.nombreDepartamento = nombreDepartamento;
     }
 
-    public String getCodigo() {
-        return codigo;
+    public void setCodigoDepartamento(int codigoDepartamento) {
+        this.codigoDepartamento = codigoDepartamento;
     }
 
-    public void setCodigo(String codigo) {
-        this.codigo = codigo;
+    public String getNombreDepartamento() {
+        return nombreDepartamento;
     }
 
-    public String getNombre() {
-        return nombre;
+    public int getCodigoDepartamento() {
+        return codigoDepartamento;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public void setEmpresa(Empresa empresa) {
+        this.empresa = empresa;
     }
 
-    public int getNumeroTrabajadores() {
-        return numeroTrabajadores;
+    public Empresa getEmpresa() {
+        return empresa;
     }
 
-    public void setNumeroTrabajadores(int numeroTrabajadores) {
-        this.numeroTrabajadores = numeroTrabajadores;
+    public Departamento(String nombreDepartamento, int codigoDepartamento, Empresa empresa) {
+        this.nombreDepartamento = nombreDepartamento;
+        this.codigoDepartamento = codigoDepartamento;
+        this.empresa = empresa;
     }
-
-    public String mostrarInfo(){
-        return"\nEl nombre del departamento es " + this.nombre +" y su codigo es "
-                + this.codigo +" y tiene "+ this.numeroTrabajadores+" trabajadores.";
-    }   
    
     
 }

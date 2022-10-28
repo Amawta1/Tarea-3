@@ -8,66 +8,36 @@ package com.mycompany.principal;
  *
  * @author amawt
  */
-public class Empleado {
+public class Empleado extends Persona {
     
-    private String cedula;
-    private String nombre;
-    private String cargo;
-    private final int yearIngreso;
-    private Departamento departamento;
+    private String anioIngreso;
+    private Departamento puesto;
 
-    public Empleado(String cedula, String nombre, String cargo, int yearIngreso, Departamento departamento) {
-        this.cedula = cedula;
-        this.nombre = nombre;
-        this.cargo = cargo;
-        this.yearIngreso = yearIngreso;
-        this.departamento = departamento;
+    public void setAnioIngreso(String anioIngreso) {
+        this.anioIngreso = anioIngreso;
     }
 
-    public String getCedula() {
-        return cedula;
+    public String getAnioIngreso() {
+        return anioIngreso;
     }
 
-    public void setCedula(String cedula) {
-        this.cedula = cedula;
+    public void setPuesto(Departamento puesto) {
+        this.puesto = puesto;
     }
 
-    public String getNombre() {
-        return nombre;
+    public Departamento getPuesto() {
+        return puesto;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public String mostrarInfoEmpleado() {
+        return this.mostrarInfo() + " trabaja en el cargo de  " + this.puesto.getNombreDepartamento()
+                + "  y pertenece a la empresa: " + this.puesto.empresa.getNombre();
+
     }
 
-    public String getCargo() {
-        return cargo;
+    public Empleado(String anioIngreso, Departamento puesto, String nombre, int fechaNacimiento) {
+        super(nombre, fechaNacimiento);
+        this.anioIngreso = anioIngreso;
+        this.puesto = puesto;
     }
-
-    public void setCargo(String cargo) {
-        this.cargo = cargo;
-    }
-
-
-
-    public Departamento getDepartamento() {
-        return departamento;
-    }
-
-    public void setDepartamento(Departamento departamento) {
-        this.departamento = departamento;
-    }
-
-    public int antiguedad() {
-        var yearActual = 2022;
-        var retorno = yearActual - yearIngreso;
-        return retorno;
-    }
-
-    public String mostrarInfo() {
-        return "\n*El nombre del empleado es " + this.nombre + " su cedula es "
-                + this.cedula + " es " + this.cargo+ " y trabaja durante "+ antiguedad() +" años";
-    }
-
-    
 }
