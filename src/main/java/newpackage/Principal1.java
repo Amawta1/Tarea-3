@@ -17,25 +17,25 @@ public class Principal1 {
         
         var leonardo = new Actor(1974, "Estados Unidos",
                 "Leonardo DiCaprio");
-        var joaquin = new Actor(1946, "Mexico",
-                "Joaquín Cosío");
+        var peter = new Actor(1983, "Estados Unidos",
+                "Andrew Garfield");
         var padrino1 = new Actor(1940, "Nueva York",
                 "Alfredo James Pacino");
 
         var lobo = new Pelicula("Lobo de Wall Street", 2013, 3.0);
-        var infierno = new Pelicula("El infierno", 2010, 2.50);
+        var araña = new Pelicula("El Sorprendente Hombre Araña", 2012, 2.16);
         var padrino = new Pelicula("El padrino", 1972, 3.5);
 
         var jordan = new Personaje("Jordan Belfort", "Protagonista",
                 leonardo, lobo);
-        var cochiloco = new Personaje("Cochiloco", "Protagonista",
-                joaquin, infierno);
+        var parker = new Personaje("Peter Parker", "Protagonista",
+                peter, araña);
         var michael = new Personaje("Michael Corleone", "Protagonista",
                 padrino1, padrino);
 
-        System.out.println(cochiloco.mostrarInfo());
-        System.out.println(joaquin.mostrarInfo());
-        System.out.println(infierno.mostrarInfo());
+        System.out.println(parker.mostrarInfo());
+        System.out.println(peter.mostrarInfo());
+        System.out.println(araña.mostrarInfo());
         System.out.println("");
 
         System.out.println(jordan.mostrarInfo());

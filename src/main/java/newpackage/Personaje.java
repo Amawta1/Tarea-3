@@ -11,14 +11,12 @@ package newpackage;
 public class Personaje {
     
     private String nombrePersonaje;
-    private String rol;
     private Actor interprete;
     private Pelicula film;
 
     public Personaje(String nP, String r, Actor i, Pelicula f) {
 
         this.nombrePersonaje = nP;
-        this.rol = r;
         this.interprete = i;
         this.film = f;
 
@@ -32,13 +30,6 @@ public class Personaje {
         this.nombrePersonaje = nombrePersonaje;
     }
 
-    public String getRol() {
-        return rol;
-    }
-
-    public void setRol(String rol) {
-        this.rol = rol;
-    }
 
     public Actor getInterprete() {
         return interprete;
@@ -57,9 +48,9 @@ public class Personaje {
     }
 
     public String mostrarInfo() {
-        return "El actor " + this.getNombrePersonaje()
-                + " participa en la pelicula: " + this.getFilm().getPelicula()
-                + ", y es el actor que le da vida al personaje " + this.getInterprete().getNombre();
+        return "El personaje " + this.getNombrePersonaje()
+                + " participa en la pelicula: " + this.getFilm().getNombrePelicula()
+                + ", y el actor que le da vida al personaje es " + this.getInterprete().getNombreActor();
     }
 
     

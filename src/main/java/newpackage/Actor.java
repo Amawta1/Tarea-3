@@ -11,12 +11,12 @@ package newpackage;
 public class Actor {
     private int fechaNacimiento;
     private String lugarNacimiento;
-    private String nombre;
+    private String nombreActor;
 
     public Actor(int fC,String lG, String no) {
         this.fechaNacimiento = fC;
         this.lugarNacimiento = lG;
-        this.nombre = no;
+        this.nombreActor = no;
     }
 
     public int getFechaNacimiento() {
@@ -36,12 +36,12 @@ public class Actor {
         this.lugarNacimiento = lugarNacimiento;
     }
 
-    public String getNombre() {
-        return nombre;
+    public String getNombreActor() {
+        return nombreActor;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public void setNombreActor(String nombreActor) {
+        this.nombreActor = nombreActor;
     }
 
     public String mostrarInfo() {

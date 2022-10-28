@@ -9,31 +9,31 @@ package newpackage;
  * @author amawt
  */
 public class Pelicula {
-    private String pelicula;
-    private int yearLanzamiento;
+    private String nombrePelicula;
+    private int yearEstreno;
     private double duracion;
 
     public Pelicula(String a, int b,double c) {
-        this.pelicula = a;
-        this.yearLanzamiento = b;
+        this.nombrePelicula = a;
+        this.yearEstreno = b;
         this.duracion = c;
 
     }
 
-    public String getPelicula() {
-        return pelicula;
+    public String getNombrePelicula() {
+        return nombrePelicula;
     }
 
-    public void setPelicula(String pelicula) {
-        this.pelicula = pelicula;
+    public void setNombrePelicula(String nombrePelicula) {
+        this.nombrePelicula = nombrePelicula;
     }
 
-    public int getYearLanzamiento() {
-        return yearLanzamiento;
+    public int getYearEstreno() {
+        return yearEstreno;
     }
 
-    public void setYearLanzamiento(int yearLanzamiento) {
-        this.yearLanzamiento = yearLanzamiento;
+    public void setYearEstreno(int yearEstreno) {
+        this.yearEstreno = yearEstreno;
     }
 
 
@@ -46,7 +46,7 @@ public class Pelicula {
     }
 
     public String mostrarInfo() {
-        return "Esta pelicula se estreno en el año " + this.getYearLanzamiento()
+        return "Esta pelicula se estreno en el año " + this.getYearEstreno()
                 + " y su duracion es de " + this.duracion + " horas";
 
     }
