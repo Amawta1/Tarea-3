@@ -35,7 +35,7 @@ public class Persona {
 
 
 
-    public Persona(String nombre, int fechaNacimiento) {
+    public Persona(String nombrePersona, int fechaNacimiento) {
         this.nombrePersona = nombrePersona;
         this.fechaNacimiento = fechaNacimiento;
     }

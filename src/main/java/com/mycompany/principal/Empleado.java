@@ -36,8 +36,8 @@ public class Empleado extends Persona {
 
     }
 
-    public Empleado(String añoIngreso, Departamento puesto, String nombre, int fechaNacimiento) {
-        super(nombre, fechaNacimiento);
+    public Empleado(String añoIngreso, Departamento puesto, String nombrePersona, int fechaNacimiento) {
+        super(nombrePersona, fechaNacimiento);
         this.añoIngreso = añoIngreso;
         this.puesto = puesto;
     }
