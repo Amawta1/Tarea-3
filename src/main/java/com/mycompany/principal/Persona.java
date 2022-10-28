@@ -10,19 +10,19 @@ package com.mycompany.principal;
  */
 public class Persona {
     
-    private String nombre;
+    private String nombrePersona;
     private int fechaNacimiento;
 
     public String mostrarInfo() {
-        return " El nombre del empleado es " + this.nombre + " nació en el año " + this.fechaNacimiento;
+        return " El nombre del empleado es " + this.nombrePersona + " nació en el año " + this.fechaNacimiento;
     }
 
-    public String getNombre() {
-        return nombre;
+    public String getNombrePersona() {
+        return nombrePersona;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public void setNombrePersona(String nombrePersona) {
+        this.nombrePersona = nombrePersona;
     }
 
     public int getFechaNacimiento() {
@@ -36,7 +36,7 @@ public class Persona {
 
 
     public Persona(String nombre, int fechaNacimiento) {
-        this.nombre = nombre;
+        this.nombrePersona = nombrePersona;
         this.fechaNacimiento = fechaNacimiento;
     }
     
