@@ -11,8 +11,6 @@ package com.mycompany.principal;
 public class Empresa {
     
     private String nombre;
-    private String duenioEmpresa;
-    private String anioCreacion;
 
 
     public void setNombre(String nombre) {
@@ -23,26 +21,12 @@ public class Empresa {
         return nombre;
     }
 
-    public void setDuenioEmpresa(String duenioEmpresa) {
-        this.duenioEmpresa = duenioEmpresa;
-    }
+   
+    
 
-    public void setAnioCreacion(String anioCreacion) {
-        this.anioCreacion = anioCreacion;
-    }
-
-    public String getDuenioEmpresa() {
-        return duenioEmpresa;
-    }
-
-    public String getAnioCreacion() {
-        return anioCreacion;
-    }
-
-    public Empresa(String nombre, String duenioEmpresa, String anioCreacion) {
+    public Empresa(String nombre) {
         this.nombre = nombre;
-        this.duenioEmpresa = duenioEmpresa;
-        this.anioCreacion = anioCreacion;
+        
     }
 
 }

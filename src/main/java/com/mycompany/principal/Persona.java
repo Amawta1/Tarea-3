@@ -14,7 +14,7 @@ public class Persona {
     private int fechaNacimiento;
 
     public String mostrarInfo() {
-        return this.nombre + " nació en el año: " + this.fechaNacimiento;
+        return " El nombre del empleado es " + this.nombre + " nació en el año " + this.fechaNacimiento;
     }
 
     public String getNombre() {

@@ -10,15 +10,15 @@ package com.mycompany.principal;
  */
 public class Empleado extends Persona {
     
-    private String anioIngreso;
+    private String añoIngreso;
     private Departamento puesto;
 
-    public void setAnioIngreso(String anioIngreso) {
-        this.anioIngreso = anioIngreso;
+    public void setAñoIngreso(String añoIngreso) {
+        this.añoIngreso = añoIngreso;
     }
 
-    public String getAnioIngreso() {
-        return anioIngreso;
+    public String getAñoIngreso() {
+        return añoIngreso;
     }
 
     public void setPuesto(Departamento puesto) {
@@ -30,14 +30,15 @@ public class Empleado extends Persona {
     }
 
     public String mostrarInfoEmpleado() {
-        return this.mostrarInfo() + " trabaja en el cargo de  " + this.puesto.getNombreDepartamento()
-                + "  y pertenece a la empresa: " + this.puesto.empresa.getNombre();
+        return this.mostrarInfo() + ", trabaja en el cargo de  " + this.puesto.getNombreDepartamento()
+                + "  y pertenece a la empresa: " + this.puesto.empresa.getNombre()+ 
+                " y esta en la empresa desde el año: " + this.getAñoIngreso();
 
     }
 
-    public Empleado(String anioIngreso, Departamento puesto, String nombre, int fechaNacimiento) {
+    public Empleado(String añoIngreso, Departamento puesto, String nombre, int fechaNacimiento) {
         super(nombre, fechaNacimiento);
-        this.anioIngreso = anioIngreso;
+        this.añoIngreso = añoIngreso;
         this.puesto = puesto;
     }
 }

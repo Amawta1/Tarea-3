@@ -11,24 +11,17 @@ package com.mycompany.principal;
 public class Departamento {
     
     private String nombreDepartamento;
-    private int codigoDepartamento;
     Empresa empresa;
 
     public void setNombreDepartamento(String nombreDepartamento) {
         this.nombreDepartamento = nombreDepartamento;
     }
 
-    public void setCodigoDepartamento(int codigoDepartamento) {
-        this.codigoDepartamento = codigoDepartamento;
-    }
 
     public String getNombreDepartamento() {
         return nombreDepartamento;
     }
 
-    public int getCodigoDepartamento() {
-        return codigoDepartamento;
-    }
 
     public void setEmpresa(Empresa empresa) {
         this.empresa = empresa;
@@ -40,7 +33,6 @@ public class Departamento {
 
     public Departamento(String nombreDepartamento, int codigoDepartamento, Empresa empresa) {
         this.nombreDepartamento = nombreDepartamento;
-        this.codigoDepartamento = codigoDepartamento;
         this.empresa = empresa;
     }
    
